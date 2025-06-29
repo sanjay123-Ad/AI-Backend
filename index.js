@@ -244,6 +244,10 @@ app.get("/history/:sessionId", ClerkExpressRequireAuth(), async (req, res) => {
     res.status(500).json({ error: "Failed to fetch history." });
   }
 });
+app.get("/", (req, res) => {
+  res.send("Backend is working!");
+});
+
 
 app.get("/sessions", ClerkExpressRequireAuth(), async (req, res) => {
   const userId = req.auth.userId;
