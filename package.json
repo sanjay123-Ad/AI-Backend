@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "@clerk/clerk-sdk-node": "^5.1.6",
+    "@clerk/express": "^1.7.5",
     "@huggingface/inference": "^4.0.6",
     "axios": "^1.10.0",
     "body-parser": "^2.2.0",
